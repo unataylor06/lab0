@@ -17,15 +17,15 @@ We set up the data frame. Edit the data below to include information about your 
 
 ```{r setup-tibble}
 team_data <- tibble(
-  name = c("Peter Rabbit", "member 1", "member 2", 
+  name = c("Una Taylor", "member 1", "member 2", 
            "member 3", "member 4"),
-  github_username = c("mcgregors-garden", "username 1", "username 2", 
+  github_username = c("unataylor06", "username 1", "username 2", 
                       "username 3", "username 4"), 
-  colour = c("powderblue", "colour 1", "colour 2", 
+  colour = c("lightpink", "colour 1", "colour 2", 
              "colour 3", "colour 4"),
-  hobby = c("Hopping", "hobby 1", "hobby 2", 
+  hobby = c("Reading", "hobby 1", "hobby 2", 
             "hobby 3", "hobby 4"),
-  favourite_number = c(2, NA, NA, NA, NA)
+  favourite_number = c(8, NA, NA, NA, NA)
   )
 
 team_data
@@ -47,19 +47,19 @@ p1
 ```
 
 
-*Remove this text (including the stars), and add your answer for Exercise 18 here.*
+This shows a bar graph where the y value is the team members favourite number and the bar is their favorite color.
 
 ### Exercises 19
 
 Change the text of the plot title and axis labels.
 
 ```{r labelled-bar-plot}
-p1 + labs(x = "Insert text here", 
-          y = "Insert text here",
-          title = "Insert text here")
+p1 + labs(x = "github username", 
+          y = "favourite number under 10",
+          title = "Lab00")
 ```
 
-*Remove this text (including the stars), and add your answer for Exercise 19 here.*
+It is the command for labeling graphs/plots.
 
 ### Exercise 20
 
@@ -69,4 +69,4 @@ p2 <- ggplot(team_data, aes(x = hobby)) +
 p2
 ```
 
-*Remove this text (including the stars) and add your answer for Exercise 20 here.*
+A better way of visualizing it would be a bar graph adding everyone with the same hobby into one bar instead of giving every individual their own bar, as this shows the data in a more readable way.
