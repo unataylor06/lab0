@@ -17,15 +17,15 @@ We set up the data frame. Edit the data below to include information about your 
 
 ```{r setup-tibble}
 team_data <- tibble(
-  name = c("Una Taylor", "member 1", "member 2", 
-           "member 3", "member 4"),
-  github_username = c("unataylor06", "username 1", "username 2", 
-                      "username 3", "username 4"), 
-  colour = c("lightpink", "colour 1", "colour 2", 
-             "colour 3", "colour 4"),
-  hobby = c("Reading", "hobby 1", "hobby 2", 
-            "hobby 3", "hobby 4"),
-  favourite_number = c(8, NA, NA, NA, NA)
+  name = c("Una", "Martha", "Charlie", 
+           "Ben", "Bella", "Ferris" ),
+  github_username = c("unataylor06", "marthahawksworth", "CharlieJK1", 
+                      "benwebster05", "s2501383", "ferriswhynot"), 
+  colour = c("lightpink", "blue", "green", 
+             "blue", "blue", "black"),
+  hobby = c("Reading", "Climbing", "Squash", 
+            "Running", "Travelling", "Squash"),
+  favourite_number = c(8, 7, 5, 4, 3, 4)
   )
 
 team_data
@@ -47,7 +47,7 @@ p1
 ```
 
 
-This shows a bar graph where the y value is the team members favourite number and the bar is their favorite color.
+This shows a bar graph where the y axis is the team members favorite number, the x axis is their github username, and the bar is their favorite color.
 
 ### Exercises 19
 
@@ -69,4 +69,4 @@ p2 <- ggplot(team_data, aes(x = hobby)) +
 p2
 ```
 
-A better way of visualizing it would be a bar graph adding everyone with the same hobby into one bar instead of giving every individual their own bar, as this shows the data in a more readable way.
+A nicer way of visualising this could be a table with all the listed hobbies and the number of people interested in them, or a pie chart showing the percentage of people who share a hobby.
